@@ -1,0 +1,20 @@
+{
+  "name": "methodox-dhole",
+  "version": "0.2.0",
+  "description": "Dhole: charts and diagrams written as text, drawn on a web page as Divooka draws them.",
+  "license": "MIT",
+  "author": "Methodox Technologies, Inc.",
+  "homepage": "https://wiki.methodox.io/Libraries/Dhole/",
+  "repository": { "type": "git", "url": "https://github.com/MethodoxTech/MethodoxDhole.git" },
+  "type": "module",
+  "main": "dist/dhole.esm.js",
+  "module": "dist/dhole.esm.js",
+  "browser": "dist/dhole.min.js",
+  "types": "dist/types/browser.d.ts",
+  "exports": {
+    ".": { "types": "./dist/types/browser.d.ts", "import": "./dist/dhole.esm.js" },
+    "./script": "./dist/dhole.min.js"
+  },
+  "files": ["dist", "spec", "LICENSE", "README.md", "CHANGELOG.md"],
+  "keywords": ["diagrams", "charts", "text", "flowchart", "sequence diagram", "gantt", "svg", "divooka", "methodox"]
+}

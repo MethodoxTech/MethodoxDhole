@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhole on a web page</title>
+  <!-- On your own page: https://cdn.jsdelivr.net/gh/MethodoxTech/MethodoxDhole@0.2/dist/dhole.min.js -->
+  <script src="../dist/dhole.min.js"></script>
+  <style>
+    body { max-width: 900px; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; color: #132033; }
+    pre { background: #f4f6fa; padding: 0.8rem 1rem; border-radius: 6px; overflow: auto; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+    textarea { width: 100%; min-height: 220px; font: 13px/1.5 ui-monospace, Menlo, Consolas, monospace; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h1>Dhole on a web page</h1>
+
+  <h2>An element</h2>
+  <p>The script defines <code>&lt;dhole-diagram&gt;</code>, which draws the text it holds.</p>
+  <dhole-diagram>
+flowchart Making tea
+Thirsty? [start] -> Boil the kettle -> Tea or coffee?
+Tea or coffee? -> Steep the tea: tea
+Tea or coffee? -> Brew the coffee: coffee
+Steep the tea -> Enjoy [end, good]
+Brew the coffee -> Enjoy
+  </dhole-diagram>
+
+  <h2>Code blocks</h2>
+  <p><code>Dhole.renderAll()</code> turns every <code>&lt;pre&gt;&lt;code class="language-dhole"&gt;</code> - what Markdown makes of a <code>```dhole</code> fence - into a drawing.</p>
+  <pre><code class="language-dhole">pie Where the day goes
+Sleep: 8
+Work: 8
+Family: 4
+Reading: 2
+Errands: 2</code></pre>
+  <pre><code class="language-dhole">sequence Paying at the till
+actor Customer
+participant Till
+participant bank: Bank of Example
+Customer -> Till: Scan the items
+Till -> bank: Ask to pay 12.50
+bank --> Till: Approved
+Till --> Customer: Receipt</code></pre>
+
+  <h2>The API</h2>
+  <div class="two">
+    <textarea id="text">gantt Launching the site
+start: 2026-11-02
+skip: weekends
+today: 2026-11-12
+section Design
+Sketches: 3d [done]
+Mock-ups: after Sketches, 4d [done]
+section Build
+Pages: after Mock-ups, 6d [active]
+Search: after Mock-ups, 4d
+Testing: after Pages and Search, 3d [critical]
+section Ship
+Launch: after Testing, milestone</textarea>
+    <div id="picture"></div>
+  </div>
+
+  <script>
+    Dhole.renderAll();
+    const text = document.getElementById("text");
+    const picture = document.getElementById("picture");
+    const draw = () => Dhole.render(text.value, picture, { theme: "light" });
+    text.addEventListener("input", draw);
+    draw();
+  </script>
+</body>
+</html>
