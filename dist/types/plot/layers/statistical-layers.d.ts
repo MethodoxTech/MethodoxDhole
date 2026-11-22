@@ -1,8 +1,8 @@
-import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts";
-import { Layer, type DrawContext, type PlanContext } from "../figure";
-import { Series } from "../series";
-import { type TrendFit, type TrendKind } from "../statistics";
-import type { Colour } from "../theme";
+import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts.js";
+import { Layer, type DrawContext, type PlanContext } from "../figure.js";
+import { Series } from "../series.js";
+import { type TrendFit, type TrendKind } from "../statistics.js";
+import type { Colour } from "../theme.js";
 export declare class TrendLine extends Layer {
     readonly x: Series;
     readonly y: Series;

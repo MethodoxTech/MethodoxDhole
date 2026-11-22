@@ -1,4 +1,4 @@
-import type { Colour, Palette } from "./theme";
+import type { Colour, Palette } from "./theme.js";
 /** How an axis maps values to positions. */
 export type ScaleType = "auto" | "linear" | "log" | "symlog" | "sqrt" | "time" | "category";
 /** Which side of the plotting area an axis is drawn on. */

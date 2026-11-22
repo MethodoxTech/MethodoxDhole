@@ -17,6 +17,22 @@ It was made for [Divooka](https://methodox.io/), where three nodes draw it and s
 
 **Try it** in the [playground on the Methodox Wiki](https://wiki.methodox.io/Libraries/Dhole/Playground/), and **learn it** from the wiki's [Dhole pages](https://wiki.methodox.io/Libraries/Dhole/) or from the [specification](spec/Dhole%20Language.md) in this repository.
 
+## Install
+
+From npm, for an application built with a bundler, a Node script or TypeScript:
+
+```
+npm install @methodox/dhole
+```
+
+```js
+import { render, read, toSvg } from "@methodox/dhole";
+```
+
+Importing the module also defines `<dhole-diagram>` where the page has custom elements. `@methodox/dhole/script` is the plain-script build (`dist/dhole.min.js`, which sets `window.Dhole` when a `<script>` tag loads it), for copying into a static site; imported through a bundler it defines the element but sets no global, so import the module instead.
+
+Or with no install at all, from jsDelivr, as below.
+
 ## On a page
 
 Load the script from jsDelivr, which serves this repository's tagged releases:
@@ -79,7 +95,20 @@ Options: `theme` (the theme a diagram has when its text names none, by name or a
 
 A problem has `severity` (`error` or `warning`), `line`, `column`, `length`, `message`, `hint`, and `describe("Chinese")` for its words in Chinese.
 
-Types for TypeScript are in `dist/types/`.
+Types for TypeScript are in `dist/types/` and come with the package; they resolve under `"moduleResolution": "bundler"`, `"node16"` and `"nodenext"`.
+
+### In Node
+
+`read`, `check`, `draw`, `toSvg` and `renderSvg` need no page: with no canvas, text is measured by a table of Open Sans's widths. So a build can turn Dhole files into SVG files:
+
+```js
+import { readFile, writeFile } from "node:fs/promises";
+import { renderSvg } from "@methodox/dhole";
+
+const { svg, result } = renderSvg(await readFile("tea.dhole", "utf8"));
+for (const problem of result.problems) console.error(`tea.dhole: ${problem}`);
+if (svg) await writeFile("tea.svg", svg);
+```
 
 ## What it draws
 

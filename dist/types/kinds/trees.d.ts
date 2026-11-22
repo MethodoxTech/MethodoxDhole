@@ -1,11 +1,11 @@
-import type { Block, Span } from "../syntax/source";
-import { type ProblemList } from "../syntax/problems";
-import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader";
-import { RectF } from "../rendering/geometry";
-import { Tone } from "../rendering/tones";
-import { Scene, type SizeF } from "../rendering/scene";
-import type { Theme } from "../plot/theme";
-import type { TextMeasurer } from "../plot/text";
+import type { Block, Span } from "../syntax/source.js";
+import { type ProblemList } from "../syntax/problems.js";
+import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader.js";
+import { RectF } from "../rendering/geometry.js";
+import { Tone } from "../rendering/tones.js";
+import { Scene, type SizeF } from "../rendering/scene.js";
+import type { Theme } from "../plot/theme.js";
+import type { TextMeasurer } from "../plot/text.js";
 /** Whether a line is a `section` line: the word, then nothing, white space or a colon. */
 export declare function isSectionLine(content: Span): boolean;
 /** A branch of a mind map: its words, its own colour if it says one, and what grows from it. */

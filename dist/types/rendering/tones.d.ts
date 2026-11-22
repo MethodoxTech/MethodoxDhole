@@ -1,4 +1,4 @@
-import type { Colour, Theme } from "../plot/theme";
+import type { Colour, Theme } from "../plot/theme.js";
 /** The neutral colours of a theme a diagram draws with. */
 export type Ink = "background" | "ink" | "secondary" | "muted" | "grid" | "axis";
 /** A colour asked for by name, found in whatever palette the theme has: the palette colour nearest that hue. Accent is the palette's first colour - the theme's own. */

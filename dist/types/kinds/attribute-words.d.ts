@@ -1,4 +1,4 @@
-import type { NamedHue } from "../rendering/tones";
+import type { NamedHue } from "../rendering/tones.js";
 /** The colour words every kind shares: the palette's hues by name, and the roles that stand for them. */
 export declare const AttributeWords: {
     /** Colours by name, and good, bad and warn as the colours they read as. */

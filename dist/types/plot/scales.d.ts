@@ -1,5 +1,5 @@
-import { type Axis, type ScaleType } from "./axis";
-import { type Series, type SeriesKind } from "./series";
+import { type Axis, type ScaleType } from "./axis.js";
+import { type Series, type SeriesKind } from "./series.js";
 /** One tick of a drawn axis: the value it marks (a number, or a category's position in the order), what it says (empty for a minor tick), where it is in pixels along the axis, and whether it is labelled and gets a gridline. */
 export interface AxisTick {
     readonly value: number;

@@ -1,7 +1,7 @@
-import { ChartLayerPlan, type ChartTraining, type LegendCollector, type PolarLayer, type PolarTraining } from "../contracts";
-import { Layer, type DrawContext, type FrameKind, type PlanContext } from "../figure";
-import { Series } from "../series";
-import type { Colour } from "../theme";
+import { ChartLayerPlan, type ChartTraining, type LegendCollector, type PolarLayer, type PolarTraining } from "../contracts.js";
+import { Layer, type DrawContext, type FrameKind, type PlanContext } from "../figure.js";
+import { Series } from "../series.js";
+import type { Colour } from "../theme.js";
 /** What a pie's slices say: each slice's share of the whole, its value, its name, its name and share, or nothing (the legend names the slices). */
 export type SliceLabel = "percent" | "value" | "name" | "nameAndPercent" | "none";
 /**

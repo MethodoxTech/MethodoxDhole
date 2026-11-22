@@ -1,5 +1,5 @@
-import type { Head } from "../syntax/scan";
-import { RectF, VectorPath, type Vec2 } from "./geometry";
+import type { Head } from "../syntax/scan.js";
+import { RectF, VectorPath, type Vec2 } from "./geometry.js";
 /** The outlines a box in a diagram can have. */
 export type NodeShape = 
 /** A rectangle with softened corners: a step. */

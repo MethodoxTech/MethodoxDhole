@@ -1,9 +1,9 @@
-import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts";
-import { Layer, type DrawContext, type PlanContext } from "../figure";
-import type { PositionScale } from "../scales";
-import { Series } from "../series";
-import type { Colour } from "../theme";
-import { type LineDash, type LineShape, type PointShape } from "./marks";
+import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts.js";
+import { Layer, type DrawContext, type PlanContext } from "../figure.js";
+import type { PositionScale } from "../scales.js";
+import { Series } from "../series.js";
+import type { Colour } from "../theme.js";
+import { type LineDash, type LineShape, type PointShape } from "./marks.js";
 /** How bars or areas per category are combined: side by side (bars) or overlapping (areas), each from zero; piled up, each starting where the one before ended; or piled up and scaled so each pile reaches 100%. */
 export type StackMode = "grouped" | "stacked" | "percent";
 /**

@@ -1,9 +1,9 @@
-import type { LineStyle } from "../syntax/scan";
-import { RectF, type Vec2, type VectorPath } from "./geometry";
-import type { Tone } from "./tones";
-import { FontWeights, type FontWeight, type ParagraphAlignment, type TextLayout, type TextMeasurer } from "../plot/text";
-import type { Theme } from "../plot/theme";
-import { DrawingLayer, type DrawingContext } from "../plot/figure";
+import type { LineStyle } from "../syntax/scan.js";
+import { RectF, type Vec2, type VectorPath } from "./geometry.js";
+import type { Tone } from "./tones.js";
+import { FontWeights, type FontWeight, type ParagraphAlignment, type TextLayout, type TextMeasurer } from "../plot/text.js";
+import type { Theme } from "../plot/theme.js";
+import { DrawingLayer, type DrawingContext } from "../plot/figure.js";
 /** A shape: filled, outlined, or both. */
 export interface ShapeMark {
     readonly type: "shape";

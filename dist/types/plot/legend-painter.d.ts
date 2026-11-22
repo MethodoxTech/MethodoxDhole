@@ -1,9 +1,9 @@
-import type { LegendItem } from "./axis";
-import { type ColorAssignment } from "./contracts";
-import type { PlanLegend, TextPainter } from "./figure";
-import type { Sink } from "./sink";
-import type { Theme } from "./theme";
-import { RectF } from "../rendering/geometry";
+import type { LegendItem } from "./axis.js";
+import { type ColorAssignment } from "./contracts.js";
+import type { PlanLegend, TextPainter } from "./figure.js";
+import type { Sink } from "./sink.js";
+import type { Theme } from "./theme.js";
+import { RectF } from "../rendering/geometry.js";
 /** Where a legend entry went, for a caller that wants to point at it. */
 export interface LegendEntryBox {
     readonly label: string;

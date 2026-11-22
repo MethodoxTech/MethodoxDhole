@@ -1,6 +1,6 @@
-import { ChartLayerPlan, type ChartTraining } from "../contracts";
-import { Layer, type DrawContext, type PlanContext } from "../figure";
-import { Series } from "../series";
+import { ChartLayerPlan, type ChartTraining } from "../contracts.js";
+import { Layer, type DrawContext, type PlanContext } from "../figure.js";
+import { Series } from "../series.js";
 /** Which point of a label sits on its data point. */
 export type LabelAnchor = "center" | "above" | "below" | "left" | "right";
 /** Text placed at data points, set in the theme's ink rather than a series colour so it reads on any background; the layer's colour overrides that when the words must match something. */

@@ -1,7 +1,7 @@
-import { PathRecorder, type CurveFactory } from "../d3-shapes";
-import type { Sink } from "../sink";
-import type { Colour } from "../theme";
-import { RectF, VectorPath, type Vec2 } from "../../rendering/geometry";
+import { PathRecorder, type CurveFactory } from "../d3-shapes.js";
+import type { Sink } from "../sink.js";
+import type { Colour } from "../theme.js";
+import { RectF, VectorPath, type Vec2 } from "../../rendering/geometry.js";
 /** How a line passes through its points: straight segments; a smooth curve that never overshoots; steps changing level halfway between points, at each point (holding the new level after it), or holding each level up to its point; a natural cubic spline. */
 export type LineShape = "straight" | "smooth" | "step" | "stepAfter" | "stepBefore" | "spline";
 /** The shape of a point. */

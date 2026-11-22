@@ -1,14 +1,14 @@
-import type { Block, Span } from "../syntax/source";
-import { Said } from "../syntax/problems";
-import { ArrowSet, type Arrow, type Ref } from "../syntax/scan";
-import { DiagramSpec, KindParser, type BuildContext, type Built, type KindInfo, type ReadContext, type Setting } from "../syntax/reader";
-import type { SourceLine } from "../syntax/source";
-import type { ProblemList } from "../syntax/problems";
-import { type NamedHue } from "../rendering/tones";
-import type { NodeShape } from "../rendering/shapes";
-import { AttributeWords } from "./attribute-words";
+import type { Block, Span } from "../syntax/source.js";
+import { Said } from "../syntax/problems.js";
+import { ArrowSet, type Arrow, type Ref } from "../syntax/scan.js";
+import { DiagramSpec, KindParser, type BuildContext, type Built, type KindInfo, type ReadContext, type Setting } from "../syntax/reader.js";
+import type { SourceLine } from "../syntax/source.js";
+import type { ProblemList } from "../syntax/problems.js";
+import { type NamedHue } from "../rendering/tones.js";
+import type { NodeShape } from "../rendering/shapes.js";
+import { AttributeWords } from "./attribute-words.js";
 export { AttributeWords };
-import { GraphEdge, GraphModel, type GraphNode } from "../layout/graph-diagram";
+import { GraphEdge, GraphModel, type GraphNode } from "../layout/graph-diagram.js";
 /** A diagram of boxes and lines: a flowchart, a state diagram, a class diagram or an entity diagram. */
 export declare class GraphSpec extends DiagramSpec {
     readonly model: GraphModel;

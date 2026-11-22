@@ -1,4 +1,4 @@
-import { VectorPath } from "../rendering/geometry";
+import { VectorPath } from "../rendering/geometry.js";
 /** One command of a path as a d3 path context receives it. */
 export type PathCommand = {
     readonly verb: "M";

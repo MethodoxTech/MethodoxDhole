@@ -1,11 +1,11 @@
-import type { Block } from "../syntax/source";
-import { type ProblemList } from "../syntax/problems";
-import { type LineStyle } from "../syntax/scan";
-import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader";
-import { Tone } from "../rendering/tones";
-import { Scene } from "../rendering/scene";
-import type { Theme } from "../plot/theme";
-import type { TextMeasurer } from "../plot/text";
+import type { Block } from "../syntax/source.js";
+import { type ProblemList } from "../syntax/problems.js";
+import { type LineStyle } from "../syntax/scan.js";
+import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader.js";
+import { Tone } from "../rendering/tones.js";
+import { Scene } from "../rendering/scene.js";
+import type { Theme } from "../plot/theme.js";
+import type { TextMeasurer } from "../plot/text.js";
 export type Role = "participant" | "actor" | "database";
 export interface Participant {
     readonly key: string;

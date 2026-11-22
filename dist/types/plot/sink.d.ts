@@ -1,6 +1,6 @@
-import { type TextLayout } from "./text";
-import { type Colour } from "./theme";
-import { identity, multiply, rotationDegrees, type Matrix, RectF, VectorPath } from "../rendering/geometry";
+import { type TextLayout } from "./text.js";
+import { type Colour } from "./theme.js";
+import { identity, multiply, rotationDegrees, type Matrix, RectF, VectorPath } from "../rendering/geometry.js";
 /** How a shape is painted: filled, or stroked with a width, a dash, caps and joins. */
 export interface Paint {
     readonly colour: Colour;

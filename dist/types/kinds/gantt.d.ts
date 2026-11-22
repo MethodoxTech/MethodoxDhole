@@ -1,10 +1,10 @@
-import type { Block, Span } from "../syntax/source";
-import { type ProblemList } from "../syntax/problems";
-import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader";
-import { Tone } from "../rendering/tones";
-import { Scene } from "../rendering/scene";
-import type { Theme } from "../plot/theme";
-import type { TextMeasurer } from "../plot/text";
+import type { Block, Span } from "../syntax/source.js";
+import { type ProblemList } from "../syntax/problems.js";
+import { DiagramSpec, KindParser, type BuildContext, type Built, type ReadContext, type Setting } from "../syntax/reader.js";
+import { Tone } from "../rendering/tones.js";
+import { Scene } from "../rendering/scene.js";
+import type { Theme } from "../plot/theme.js";
+import type { TextMeasurer } from "../plot/text.js";
 export type Status = "planned" | "done" | "active" | "critical";
 export declare class Task {
     readonly name: string;
