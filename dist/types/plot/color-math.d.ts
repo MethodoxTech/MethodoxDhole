@@ -1,4 +1,4 @@
-import type { Colour } from "./theme";
+import type { Colour } from "./theme.js";
 /** The colour a fraction `t` of the way from `a` to `b`, alpha included, rounded rather than truncated. */
 export declare function lerp(a: Colour, b: Colour, t: number): Colour;
 /** The colour with its alpha multiplied by `opacity`. */

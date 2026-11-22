@@ -1,9 +1,9 @@
-import { type FontWeight, type TextLayout, type TextMeasurer } from "./text";
-import { type Colour, type Palette, type Theme } from "./theme";
-import type { Sink } from "./sink";
-import { RectF } from "../rendering/geometry";
-import type { Axis, ColorScale, Legend } from "./axis";
-import type { ChartTraining, LegendCollector } from "./contracts";
+import { type FontWeight, type TextLayout, type TextMeasurer } from "./text.js";
+import { type Colour, type Palette, type Theme } from "./theme.js";
+import type { Sink } from "./sink.js";
+import { RectF } from "../rendering/geometry.js";
+import type { Axis, ColorScale, Legend } from "./axis.js";
+import type { ChartTraining, LegendCollector } from "./contracts.js";
 /** The jobs text does on a chart, each with its own size and weight from the theme. */
 export type TextRole = "tick" | "axisTitle" | "chartTitle" | "figureTitle" | "subtitle" | "caption" | "legend" | "legendTitle" | "dataLabel";
 /** Which point of a text block is placed at the coordinates given. */

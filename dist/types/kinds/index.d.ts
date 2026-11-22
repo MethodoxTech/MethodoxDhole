@@ -1,5 +1,5 @@
-import "./graph-kinds";
-import "./sequence";
-import "./trees";
-import "./gantt";
-import "./charts";
+import "./graph-kinds.js";
+import "./sequence.js";
+import "./trees.js";
+import "./gantt.js";
+import "./charts.js";

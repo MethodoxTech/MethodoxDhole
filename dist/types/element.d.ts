@@ -1,5 +1,5 @@
-import { type DholeOptions, type DholeResult } from "./dhole";
-import { type Theme } from "./plot/theme";
+import { type DholeOptions, type DholeResult } from "./dhole.js";
+import { type Theme } from "./plot/theme.js";
 /** How a page draws a text. */
 export interface RenderOptions extends DholeOptions {
     /** The theme a diagram has when its text names none, by name - light, dark, presentation, minimal, classic, print, golden, quiet gold, silver gold, high contrast - or as a theme. */

@@ -1,9 +1,9 @@
-import type { ColorScale, LegendItem, LegendSwatch } from "./axis";
-import type { DrawContext, FrameKind, Layer, LayerPlan, TextPainter } from "./figure";
-import type { Paint } from "./sink";
-import type { Colour, Theme } from "./theme";
-import { AxisTraining, type AxisTick, type PositionScale, type ScaleDomain } from "./scales";
-import { type Series, type SeriesKind } from "./series";
+import type { ColorScale, LegendItem, LegendSwatch } from "./axis.js";
+import type { DrawContext, FrameKind, Layer, LayerPlan, TextPainter } from "./figure.js";
+import type { Paint } from "./sink.js";
+import type { Colour, Theme } from "./theme.js";
+import { AxisTraining, type AxisTick, type PositionScale, type ScaleDomain } from "./scales.js";
+import { type Series, type SeriesKind } from "./series.js";
 /**
  * A layer made ready to draw: its derived data computed, and the things a chart asks of it - which frame it needs, what values it
  * binds to the axes and the colour scale, how it draws, what it adds to the legend, and how far its marks reach past the plotting

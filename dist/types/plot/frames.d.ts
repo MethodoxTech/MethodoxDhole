@@ -1,8 +1,8 @@
-import { AxisLayout } from "./axis-painter";
-import { type ChartPlan } from "./figure";
-import type { Theme } from "./theme";
-import type { TextPainter } from "./figure";
-import { RectF } from "../rendering/geometry";
+import { AxisLayout } from "./axis-painter.js";
+import { type ChartPlan } from "./figure.js";
+import type { Theme } from "./theme.js";
+import type { TextPainter } from "./figure.js";
+import { RectF } from "../rendering/geometry.js";
 /** A Cartesian chart measured into its cell: its legend, its axes and the plotting area left between them. */
 export declare class CartesianFrame {
     cell: RectF;

@@ -2,7 +2,7 @@
 
 ## 0.2.1
 
-Published to npm as `@methodox/dhole`, with the same build as 0.2.0: no change to the language, the drawings or the API. The package names its module, its types and its plain script (`@methodox/dhole/script`), and no longer points older bundlers' `browser` field at the plain script, which has no exports. `languageVersion` stays 0.2.0, the language's version, which this release does not change.
+Published to npm as `@methodox/dhole`, with the same script and module as 0.2.0, byte for byte: no change to the language, the drawings or the API. The type declarations now give every relative import its file (`./dhole.js`, `./kinds/index.js`), so they resolve under TypeScript's `"moduleResolution": "node16"` and `"nodenext"` as well as `"bundler"`; 0.2.0's, written without extensions, gave a Node project's TypeScript no exports at all. The package names its module, its types and its plain script (`@methodox/dhole/script`), and no longer points older bundlers' `browser` field at the plain script, which has no exports. `languageVersion` stays 0.2.0, the language's version, which this release does not change.
 
 ## 0.2.0
 

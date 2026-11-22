@@ -95,7 +95,7 @@ Options: `theme` (the theme a diagram has when its text names none, by name or a
 
 A problem has `severity` (`error` or `warning`), `line`, `column`, `length`, `message`, `hint`, and `describe("Chinese")` for its words in Chinese.
 
-Types for TypeScript are in `dist/types/` and come with the package; they resolve under `"moduleResolution": "bundler"`.
+Types for TypeScript are in `dist/types/` and come with the package; they resolve under `"moduleResolution": "bundler"`, `"node16"` and `"nodenext"`.
 
 ### In Node
 

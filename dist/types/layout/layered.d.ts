@@ -1,7 +1,7 @@
-import { RectF, type Vec2 } from "../rendering/geometry";
-import type { SizeF } from "../rendering/scene";
-import type { Direction } from "./direction";
-export type { Direction } from "./direction";
+import { RectF, type Vec2 } from "../rendering/geometry.js";
+import type { SizeF } from "../rendering/scene.js";
+import type { Direction } from "./direction.js";
+export type { Direction } from "./direction.js";
 /** A box to place. */
 export declare class LayeredNode {
     readonly width: number;

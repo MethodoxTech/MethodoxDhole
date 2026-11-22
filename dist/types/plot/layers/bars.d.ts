@@ -1,8 +1,8 @@
-import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts";
-import { Layer, type DrawContext, type PlanContext, type TextPainter } from "../figure";
-import { Series } from "../series";
-import type { Colour } from "../theme";
-import { type StackMode } from "./lines";
+import { ChartLayerPlan, type ChartTraining, type LegendCollector } from "../contracts.js";
+import { Layer, type DrawContext, type PlanContext, type TextPainter } from "../figure.js";
+import { Series } from "../series.js";
+import type { Colour } from "../theme.js";
+import { type StackMode } from "./lines.js";
 export declare class Bars extends Layer {
     /** The categories, one per bar (or per group of bars). */
     readonly categories: Series;

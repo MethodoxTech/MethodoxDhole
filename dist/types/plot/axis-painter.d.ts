@@ -1,9 +1,9 @@
-import type { AxisSide } from "./axis";
-import { TextPainter, type DrawContext } from "./figure";
-import { PositionScale, type AxisTick, type ScaleDomain } from "./scales";
-import type { Sink } from "./sink";
-import type { Theme } from "./theme";
-import type { RectF } from "../rendering/geometry";
+import type { AxisSide } from "./axis.js";
+import { TextPainter, type DrawContext } from "./figure.js";
+import { PositionScale, type AxisTick, type ScaleDomain } from "./scales.js";
+import type { Sink } from "./sink.js";
+import type { Theme } from "./theme.js";
+import type { RectF } from "../rendering/geometry.js";
 export declare class AxisLayout {
     domain: ScaleDomain;
     horizontal: boolean;

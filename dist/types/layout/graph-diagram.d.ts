@@ -1,11 +1,11 @@
-import { RectF } from "../rendering/geometry";
-import { Scene, type SizeF } from "../rendering/scene";
-import type { NodeShape } from "../rendering/shapes";
-import { Tone } from "../rendering/tones";
-import type { Head, LineStyle } from "../syntax/scan";
-import { type TextMeasurer } from "../plot/text";
-import type { Theme } from "../plot/theme";
-import type { Direction } from "./direction";
+import { RectF } from "../rendering/geometry.js";
+import { Scene, type SizeF } from "../rendering/scene.js";
+import type { NodeShape } from "../rendering/shapes.js";
+import { Tone } from "../rendering/tones.js";
+import type { Head, LineStyle } from "../syntax/scan.js";
+import { type TextMeasurer } from "../plot/text.js";
+import type { Theme } from "../plot/theme.js";
+import type { Direction } from "./direction.js";
 /** What a box in a graph diagram holds besides its label: a class's members, an entity's attributes. */
 export declare class Compartments {
     /** A line above the name: «interface». */

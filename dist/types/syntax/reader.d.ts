@@ -1,9 +1,9 @@
-import { Block, SourceLine, type Span } from "./source";
-import { ProblemList, Said } from "./problems";
-import type { Direction } from "../layout/direction";
-import { type Theme } from "../plot/theme";
-import type { Chart } from "../plot/figure";
-import type { TextMeasurer } from "../plot/text";
+import { Block, SourceLine, type Span } from "./source.js";
+import { ProblemList, Said } from "./problems.js";
+import type { Direction } from "../layout/direction.js";
+import { type Theme } from "../plot/theme.js";
+import type { Chart } from "../plot/figure.js";
+import type { TextMeasurer } from "../plot/text.js";
 /** What a parser is given: where its problems go, which kind it reads, and the line that named it. */
 export interface ReadContext {
     readonly problems: ProblemList;

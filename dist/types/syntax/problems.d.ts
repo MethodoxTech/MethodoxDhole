@@ -1,4 +1,4 @@
-import type { Span } from "./source";
+import type { Span } from "./source.js";
 /** A word Dhole says in two languages, for a problem that names it: a kind of diagram, a setting. */
 export declare class Said {
     readonly english: string;

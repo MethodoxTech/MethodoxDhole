@@ -1,5 +1,5 @@
-import { type Span } from "./source";
-import type { ProblemList } from "./problems";
+import { type Span } from "./source.js";
+import type { ProblemList } from "./problems.js";
 /** How a line between two things is drawn. */
 export type LineStyle = "solid" | "dashed" | "thick";
 /** What an end of a line carries: nothing, a filled arrowhead, a hollow triangle (inheritance), a filled diamond (composition) or a hollow one (aggregation). */

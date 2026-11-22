@@ -1,7 +1,7 @@
-import type { DholeProblem } from "./syntax/problems";
-import { type Figure } from "./plot/figure";
-import { type TextMeasurer } from "./plot/text";
-import type { Theme } from "./plot/theme";
+import type { DholeProblem } from "./syntax/problems.js";
+import { type Figure } from "./plot/figure.js";
+import { type TextMeasurer } from "./plot/text.js";
+import type { Theme } from "./plot/theme.js";
 /** How a text is read and drawn. */
 export interface DholeOptions {
     /** What text is measured with; a canvas on a page, Open Sans's metrics elsewhere. */

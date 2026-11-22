@@ -1,12 +1,12 @@
-import { DiagramSpec, type Built, type BuildContext, type ReadContext } from "../syntax/reader";
-import { type ProblemList } from "../syntax/problems";
-import { Scene } from "../rendering/scene";
-import { Tone } from "../rendering/tones";
-import type { Theme } from "../plot/theme";
-import { type SliceLabel } from "../plot/layers/radial-layers";
-import { type StackMode } from "../plot/layers/lines";
-import type { LineShape } from "../plot/layers/marks";
-import "../plot/frames";
+import { DiagramSpec, type Built, type BuildContext, type ReadContext } from "../syntax/reader.js";
+import { type ProblemList } from "../syntax/problems.js";
+import { Scene } from "../rendering/scene.js";
+import { Tone } from "../rendering/tones.js";
+import type { Theme } from "../plot/theme.js";
+import { type SliceLabel } from "../plot/layers/radial-layers.js";
+import { type StackMode } from "../plot/layers/lines.js";
+import type { LineShape } from "../plot/layers/marks.js";
+import "../plot/frames.js";
 export declare class PieSpec extends DiagramSpec {
     readonly slices: {
         name: string;
